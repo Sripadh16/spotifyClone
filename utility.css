@@ -1,0 +1,62 @@
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.border{
+    border: 2px solid red;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.bg-grey{
+    background-color: #121212;
+    color: white;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+/* Styling the scrollbar for the card container */
+.spotifyPlaylists .card-container::-webkit-scrollbar {
+    width: 8px; /* Width of the vertical scrollbar */
+}
+
+/* The background of the scrollbar area */
+.spotifyPlaylists .card-container::-webkit-scrollbar-track {
+    background: #121212; /* Match your background-black */
+    border-radius: 10px;
+}
+
+/* The draggable part of the scrollbar */
+.spotifyPlaylists .card-container::-webkit-scrollbar-thumb {
+    background: #555; /* Subtle grey */
+    border-radius: 10px;
+    border: 2px solid #121212; /* Creates padding effect around the thumb */
+}
+
+/* Hover effect for the scrollbar thumb */
+.spotifyPlaylists .card-container::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3; /* Brightens when user interacts, like Spotify */
+}
+
+/* Firefox Support (Modern standard) */
+.spotifyPlaylists .card-container {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #121212;
+}
