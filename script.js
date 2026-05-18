@@ -124,6 +124,7 @@ async function main(){
         play.src = "pause.svg"
     })
 
+    //event listener to next button
     document.querySelector("#next").addEventListener("click",()=>{
 
         let currIndex = songs.indexOf(decodeURIComponent(currSong.src.split("/songs/")[1])) ;
@@ -133,6 +134,11 @@ async function main(){
             playMusic(songs[currIndex + 1]);
         }
         play.src = "pause.svg"
+    })
+
+    //event listener to volume control
+    document.querySelector(".range").addEventListener("input",(e)=>{
+        currSong.volume = e.target.value / 100;
     })
 };  
  

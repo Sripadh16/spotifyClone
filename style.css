@@ -329,6 +329,7 @@ body{
     align-items: center;
     gap: 10px;
     padding: 0px 10px;
+    cursor: pointer;
 }
 
 .timevol{
@@ -364,7 +365,7 @@ body{
 
     .playbar{
         min-height: 80px;
-        width: 96vw;
+        width: 99vw;
     }
 
     .songTime{
@@ -374,6 +375,16 @@ body{
     .songInfo{
         white-space: nowrap;
         padding:  0px 10px;
+    }
+}
+
+@media (max-width: 660px){
+    .card-container{
+        justify-content: center;
+    }
+
+    .playbar{
+        width: 98vw;
     }
 }
 
@@ -389,8 +400,8 @@ body{
     }
 
     .playbar{
-        min-height: 130px;
-        width: 96vw;
+        min-height: 175px;
+        width: 97vw;
         border-radius: 20px;
     }
 
@@ -409,6 +420,10 @@ body{
         flex-direction: column;
         gap: 10px;
         padding: 10px 0px;
+    }
+
+    .volume{
+        padding:5px 0px;
     }
 
 }
