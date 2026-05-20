@@ -329,13 +329,16 @@ body{
     align-items: center;
     gap: 10px;
     padding: 0px 10px;
-    cursor: pointer;
 }
 
 .timevol{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.range input{
+    cursor: pointer;
 }
 
 @media (max-width: 1400px){
