@@ -110,7 +110,7 @@ body{
     flex-wrap: wrap;
     max-height: 75vh;
     overflow-y: auto; 
-    
+    padding-bottom: 15vh;
 }
 
 .spotifyPlaylists .card-container .card{
