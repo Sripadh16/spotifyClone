@@ -120,7 +120,7 @@ async function getAlbums() {
 }
 
 async function main() {
-  songs = await getSongs("songs/english");
+  songs = await getSongs("songs/hindi");
   updateSongListUI(songs);
   playMusic(songs[0], true);
 
